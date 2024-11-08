@@ -1,0 +1,507 @@
+/* Countdown Timer */
+.countdown-timer .time-box {
+  width: 60px; /* Réduction de la taille des boîtes */
+  height: 80px;
+}
+.countdown-timer .time-box span {
+  font-size: 1.5rem; /* Réduction de la taille de la police */
+}
+@media (max-width: 768px) {
+  .countdown-timer {
+      flex-direction: column; /* Disposition verticale sur mobile */
+      gap: 10px; /* Espacement réduit */
+  }
+}
+
+
+
+
+/* Nouveau bouton stylé */
+.btn-modern {
+    background-color: #f26722; /* Couleur principale */
+    color: #fff; /* Texte blanc */
+    border: 2px solid transparent; /* Bordure initialement invisible */
+    border-radius: 50px; /* Bords arrondis */
+    padding: 10px 20px; /* Espacement interne */
+    font-size: 1.2rem; /* Taille de la police */
+    font-weight: bold; /* Texte en gras */
+    text-transform: uppercase; /* Texte en majuscule */
+    letter-spacing: 1px; /* Espacement des lettres */
+    transition: all 0.3s ease-in-out; /* Transition douce */
+    cursor: pointer; /* Curseur interactif */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre élégante */
+}
+.btn-modern:hover {
+    background-color: #fff; /* Couleur de fond survolée */
+    color: #f26722; /* Couleur du texte */
+    border-color: #f26722; /* Bordure orange */
+    transform: scale(1.05); /* Agrandissement */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Ombre accentuée */
+}
+
+/* Styling pour section 2 */
+.section2 {
+    padding: 50px 20px;
+    background-color: #1e592b; /* Vert foncé */
+    color: #fff; /* Texte blanc */
+}
+
+/* Conteneur pour la disposition */
+.section2 .content {
+    display: flex;
+    flex-wrap: wrap; /* Adaptation sur petits écrans */
+    gap: 20px; /* Espacement entre les éléments */
+}
+
+/* Image et légende */
+.image-container {
+    flex: 1; /* Prend la moitié de l'espace */
+    max-width: 40%; /* Limite la taille sur les grands écrans */
+    text-align: center; /* Centre la légende */
+}
+.image-container img {
+    width: 100%; /* Image responsive */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre élégante */
+}
+.image-container .image-caption {
+    margin-top: 10px; /* Espacement avec l'image */
+    font-style: italic; /* Texte en italique */
+    font-size: 0.9rem; /* Taille réduite */
+    color: #ccc; /* Couleur plus claire */
+}
+
+/* Citation */
+.quote-container {
+    flex: 1; /* Prend l'autre moitié de l'espace */
+    max-width: 55%; /* Limite la taille */
+}
+.blockquote {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    position: relative;
+    padding-left: 20px;
+    border-left: 5px solid #f26722; /* Ligne verticale orange */
+}
+.blockquote-footer {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #f26722; /* Couleur du footer */
+    font-style: italic;
+}
+
+/* Section 1 Styling */
+.section1 {
+    
+    padding: 50px 0;
+    height: 60vh;
+}
+.section1 h1 {
+    font-size: 2rem;
+    color: #1e592b;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+/* Conteneur du carrousel */
+.carousel-container {
+    overflow: hidden; /* Cache les éléments débordants */
+    width: 80%;
+    position: relative;
+}
+
+/* Track des logos */
+.carousel-track {
+    display: flex;
+    gap: 20px;
+    animation: scroll 15s linear infinite;
+}
+
+/* Logos individuels */
+.carousel-item {
+    width: 150px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+/* Animation continue */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+
+body {
+    margin: 0;
+    font-family: montserrat, sans-serif;
+}
+
+h1 {
+    font-family: 'montserrat', serif; /* Serif comme alternative */
+  }
+  
+p {
+    font-family: 'montserrat', sans-serif; /* Sans-serif comme alternative */
+}
+
+/* Animation pour les boutons */
+button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+button:hover {
+    background-color: #f26722;
+    transform: scale(1.05);
+}
+
+/* Amélioration des sections */
+/* .section {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('background.jpg') center/cover no-repeat;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 8px;
+} */
+.section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Styling du menu */
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+.menu ul li {
+    margin: 0 10px;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+.menu ul li a:hover {
+    background-color: #f26722;
+    color: white;
+}
+
+
+.sectionMenu {
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    background-color: #fff; /* Remplacez par le chemin de votre image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('lutter.jpg'); /* Remplacez par le chemin de votre image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+
+.section2 {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background-color: #1e592b; /* Remplacez par le chemin de votre image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(8px); /* Applique le flou */
+    background-color: rgba(7, 49, 16, 0.386); /* Couleur semi-transparente */
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2; /* Pour être au-dessus de l'overlay */
+    color: white;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.content p {
+    font-size: 1.5rem;
+    margin: 10px 0 0;
+}
+
+
+
+.timer .time-box {
+    background: #1e592b;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100px;
+}
+
+.btn-box {
+    background: #1e592b;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100px;
+}
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: #1e592b;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* .carousel {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    border: 2px solid #ddd;
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item {
+    min-width: 100%;
+    height: 300px;
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+  
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .carousel-btn.prev {
+    left: 10px;
+  }
+  
+  .carousel-btn.next {
+    right: 10px;
+  } */
+  
+
+  .menu {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #1e592b;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    color: #fff; /* Couleur dorée pour le survol */
+}
+
+.menu ul li a i {
+    margin-left: 8px;
+     
+}
+
+.msg-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .msg-section {
+    width: 40%;
+  }
+  
+  .msg-section1 {
+    width: 60%;
+  }
+  
+  .msg-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+
+footer {
+    background: linear-gradient(to bottom, #fff, #1e592b);
+    color: #fff;
+    padding: 20px 0;
+    font-family: montserrat, sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    width: 20%;
+  }
+  
+  .footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin: 5px 0;
+  }
+  
+  .footer-section ul li a {
+    text-decoration: none;
+    color: #1e592b; /* Contraste avec le blanc */
+    transition: color 0.3s;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #f26722; /* Couleur dorée pour le hover */
+  }
+  
+  .social-icon {
+    display: flex;
+    align-items: center;
+  }
+  
+  .social-icon i {
+    margin-right: 10px;
+    color: #1e592b; /* Couleur des icônes */
+  }
+  
+  .social-icon i:hover {
+    color: #f39c12; /* Couleur dorée pour le hover */
+  }
+  
+  .footer-slogan {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .slogan {
+    font-size: 16px;
+    font-style: italic;
+    color: #1e592b;
+  }
+  
+  .footer-copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #fff;
+  }
+  
+  .footer-copyright p {
+    margin: 0;
+  }
+  
+  .par-container {
+    max-width: 100%; /* Adapte la taille à la largeur de l'écran */
+    margin: 0 auto; /* Centre horizontalement */
+    align-items: center;
+    padding: 50px 20px;
+}
+
+/* Style de l'image */
+.par {
+    width: 100%; /* L'image prend toute la largeur disponible */
+    max-width: 100%; /* Taille maximale de l'image */
+    height: auto; /* Conserve les proportions */
+    
+    
+}
